@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { client } from "../libs/client";
 import styles from "../styles/Home.module.scss";
-import ConvertDate from "./components/convertdate.js";
+//import ConvertDate from "./components/convertdate.js";
 
 //SSG
 export const getStaticProps = async () => {
