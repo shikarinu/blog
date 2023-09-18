@@ -15,6 +15,7 @@ export const getStaticProps = async () => {
 
 export default function Home({ blog }) {
   return (
+    <>
     <div className={styles.container}>
       {blog.map((blog) => (
         <li key={blog.id}>
@@ -23,6 +24,8 @@ export default function Home({ blog }) {
             </Link>
         </li>
       ))}
-    </div>
+      </div>
+      </>
+    
   );
 }
