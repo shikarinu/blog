@@ -1,6 +1,7 @@
 import { client } from "../../libs/client";
 import styles from "../../styles/Home.module.scss";
 
+
 //SSG
 export const getStaticProps = async (context) => {
   const id = context.params.id;
@@ -9,6 +10,7 @@ export const getStaticProps = async (context) => {
   return {
     props: {
       blog: data,
+      
     },
   };
 };
@@ -31,7 +33,11 @@ export default function BlogId({ blog }) {
       <div
         dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
         className={styles.post}
+        
+        
       ></div>
+      
     </main>
-  );
+    
+);
 }

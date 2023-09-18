@@ -22,12 +22,20 @@
   
 }
 
+.container li {
+  
+    list-style: none;
+ }
+  
+
+
 .container {
   background-color: rgb(56, 83, 109);
   color: #c4cbd1;
   width: 45%;
-  height: 400px;
-  text-align: left;
+  height: auto;
+  display: inline;
+  text-align: center;
 font-size: x-large;
   top: 0;
   bottom: 0;
@@ -38,6 +46,11 @@ font-size: x-large;
   position: absolute;
   right: 50vh;
   border-radius: 30px;
+  
+}
+
+.footer_ {
+color: #c82c2c;
 }
 
 .post {
@@ -45,7 +58,7 @@ font-size: x-large;
     font-size: 30px;
     font-weight: bold;
     margin: 40px 0 20px;
-    background-color: #ffffff;
+    background-color: #648290;
     padding: 10px 20px;
     border-radius: 5px;
     
@@ -55,13 +68,10 @@ font-size: x-large;
     font-size: 24px;
     font-weight: bold;
     margin: 40px 0 16px;
-    border-bottom: 1px solid #d7d4d4;
+    border-bottom: 1px solid #648290;
   }
 
-  & > p {
-    line-height: 1.8;
-    letter-spacing: 0.2px;
-  }
+  
 
   & > ol {
     list-style-type: decimal;
