@@ -21,7 +21,7 @@ export default function Home({ blog }) {
         <li key={blog.id}>
           
           <Link href={`blog/${blog.id}`}>
-            {blog.title}
+            {blog.t1itle}
             </Link>
         </li>
       ))}
