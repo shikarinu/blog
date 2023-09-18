@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
 export default function BlogId({ blog }) {
   return (
     <main className={styles.main}>
-      <h2 className={styles.title}>{blog.title}</h2>
+      <h1 className={styles.title}>{blog.title}</h1>
       <p className={styles.publishedAt}>{blog.publishedAt}</p>
       <div
         dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
