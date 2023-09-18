@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { client } from "../libs/client";
 import styles from "../styles/Home.module.scss";
-//import ConvertDate from "./components/convertdate.js";
 
 //SSG
 export const getStaticProps = async () => {
@@ -19,10 +18,9 @@ export default function Home({ blog }) {
     <div className={styles.container}>
       {blog.map((blog) => (
         <li key={blog.id}>
-          
           <Link href={`blog/${blog.id}`}>
-            {blog.t1itle}
-            </Link>
+            {blog.title}
+          </Link>
         </li>
       ))}
     </div>
