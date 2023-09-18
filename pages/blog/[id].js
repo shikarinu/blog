@@ -1,6 +1,6 @@
 import { client } from "../../libs/client";
 import styles from "../../styles/Home.module.scss";
-import ConvertDate from "..git init/components/convertdate.js";
+import ConvertDate from "../components/convertdate.js";
 
 
 //SSG
