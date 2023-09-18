@@ -19,7 +19,7 @@ export default function Home({ blog }) {
     <div className={styles.container}>
       {blog.map((blog) => (
         <li key={blog.id}>
-          <ConvertDate convertDate={blog.publishedAt}/>
+          
           <Link href={`blog/${blog.id}`}>
             {blog.title}
             </Link>
