@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { client } from "../libs/client";
 import styles from "../styles/Home.module.scss";
-import components from "./components/footer.js";
-import Footer from "./components/footer.js";
 
 //SSG
 export const getStaticProps = async () => {
@@ -24,10 +22,12 @@ export default function Home({ blog }) {
           <Link href={`blog/${blog.id}`}>
            <p> {blog.title}</p>
           </Link>
+          
         </li>
+       
       ))}
-      <Footer />
-    </div>
+     
+     </div>
    
   );
   
